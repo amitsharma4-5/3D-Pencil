@@ -344,4 +344,9 @@ function render() {
 	paper.view.draw();
 }
 
+function clearSketch() {
+	sketch.group.removeChildren();
+	paper.view.draw();
+}
+
 init();
