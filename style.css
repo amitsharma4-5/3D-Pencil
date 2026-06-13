@@ -54,6 +54,13 @@ canvas {
 	-webkit-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
 	box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
+	transition: box-shadow 0.3s ease;
+}
+
+#sketchpad:hover {
+	-webkit-box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.5);
+	box-shadow: 0px 6px 20px -2px rgba(0,0,0,0.5);
 }
 
 #clearBtn {
