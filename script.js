@@ -57,6 +57,8 @@
 		}
 		
 		this.group.addChild(this.currPath);
+		var counter = document.getElementById('strokeCounter');
+		if (counter) counter.textContent = 'Strokes: ' + this.group.children.length;
 	}
 
 	Sketch.prototype.setSketchingBounds = function(x, y, width, height) {
@@ -347,6 +349,8 @@ function render() {
 function clearSketch() {
 	sketch.group.removeChildren();
 	paper.view.draw();
+	var counter = document.getElementById('strokeCounter');
+	if (counter) counter.textContent = 'Strokes: 0';
 }
 
 init();
