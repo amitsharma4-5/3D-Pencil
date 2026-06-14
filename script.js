@@ -353,6 +353,14 @@ function clearSketch() {
 	if (counter) counter.textContent = 'Strokes: 0';
 }
 
+var bgColors = ['#6eccdf', '#f9c0c0', '#c0f0c0', '#d0c0f9', '#f9ecc0'];
+var bgIndex = 0;
+
+function toggleBg() {
+	bgIndex = (bgIndex + 1) % bgColors.length;
+	document.getElementById('bg').style.backgroundColor = bgColors[bgIndex];
+}
+
 document.addEventListener('keydown', function(e) {
 	if (e.key === 'Escape') clearSketch();
 });
