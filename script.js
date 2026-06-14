@@ -353,4 +353,8 @@ function clearSketch() {
 	if (counter) counter.textContent = 'Strokes: 0';
 }
 
+document.addEventListener('keydown', function(e) {
+	if (e.key === 'Escape') clearSketch();
+});
+
 init();
