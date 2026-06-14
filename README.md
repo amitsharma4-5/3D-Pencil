@@ -23,3 +23,9 @@ The shadow and sketch are rendered on a separate 2D canvas (using paper.js vecto
 
 ## Run Locally
 Open `index.html` directly in your browser — no build step required.
+
+## Keyboard Shortcuts
+| Key | Action |
+|-----|--------|
+| `Escape` | Clear the canvas |
+| `Ctrl + Z` | Undo last stroke |
