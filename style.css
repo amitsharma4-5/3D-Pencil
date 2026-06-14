@@ -4,6 +4,7 @@ html, body {
 	cursor: none;
 	user-select: none;
 	-webkit-user-select: none;
+	font-family: 'Roboto', sans-serif;
 }
 
 #bg {
