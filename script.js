@@ -363,6 +363,17 @@ function toggleBg() {
 
 document.addEventListener('keydown', function(e) {
 	if (e.key === 'Escape') clearSketch();
+	if ((e.ctrlKey || e.metaKey) && e.key === 'z') undoStroke();
 });
+
+function undoStroke() {
+	var children = sketch.group.children;
+	if (children.length > 0) {
+		children[children.length - 1].remove();
+		paper.view.draw();
+		var counter = document.getElementById('strokeCounter');
+		if (counter) counter.textContent = 'Strokes: ' + sketch.group.children.length;
+	}
+}
 
 init();
